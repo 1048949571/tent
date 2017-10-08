@@ -1,0 +1,24 @@
+[
+
+      {
+      "img":"banner_9.jpg",
+      "name": "玛丽",
+      "action":"擅长：落枕推拿、快速见效",
+      "txt":"￥99元",
+      "shuliang":"接单量：554"
+    },
+    {
+      "img":"banner_10.jpg",
+      "name": "小七",
+      "action": "擅长：从头到交输进华脉",
+      "txt":"￥79元",
+      "shuliang":"接单量：342"
+    },{
+      "img":"banner_3.jpg",
+      "name": "秋香",
+      "action":"擅长：全身推拿+足浴按摩",
+      "txt":"￥59元",
+      "shuliang":"接单量：124"
+    }
+]
+

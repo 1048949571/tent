@@ -1,0 +1,192 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.12rem;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  height: 0.3rem;
+  background: #f2f2f2;
+  text-align: center;
+  position: relative; }
+  .header b {
+    position: absolute;
+    right: 0.1rem;
+    top: 0.02rem;
+    color: #4b4b4b;
+    font-size: 0.2rem; }
+  .header h1 {
+    font-size: 0.16rem;
+    color: #4b4b4b;
+    line-height: 0.3rem; }
+  .header span {
+    position: absolute;
+    top: 0.05rem;
+    left: 0.2rem;
+    color: #4b4b4b; }
+    .header span i {
+      font-size: 0.2rem; }
+
+.content {
+  -webkit-flex: 1;
+  overflow-y: scroll;
+  position: relative;
+  background: #dddddd; }
+
+.swiper-container {
+  position: absolute;
+  top: 0;
+  height: 1.3rem;
+  width: 100%; }
+
+.flash {
+  height: 1.3rem; }
+  .flash img {
+    width: 100%;
+    height: 100%; }
+
+#click {
+  width: 1rem;
+  position: absolute;
+  margin-left: 70%; }
+
+.navigator {
+  display: -webkit-flex;
+  padding-top: 0.15rem;
+  padding-bottom: 0.1rem;
+  background-color: #fff;
+  margin-top: 1.3rem; }
+  .navigator dl {
+    -webkit-flex: 1;
+    text-align: center; }
+    .navigator dl dt {
+      width: 0.43rem;
+      height: 0.43rem;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 0.43rem;
+      text-align: center;
+      border-radius: 100%; }
+      .navigator dl dt > i {
+        color: #fff;
+        font-size: 0.35rem;
+        vertical-align: middle; }
+    .navigator dl dd {
+      margin-top: 0.1rem; }
+
+.imag {
+  width: 100%;
+  height: 1.9rem;
+  background: #fff;
+  margin-top: 0.1rem;
+  display: -webkit-flex;
+  color: #fff; }
+  .imag .left {
+    position: relative;
+    height: 1.9rem;
+    float: left;
+    -webkit-flex: 1;
+    padding: 0.01rem; }
+    .imag .left time {
+      position: absolute;
+      top: 0.1rem;
+      right: 0.1rem;
+      font-weight: bolder;
+      font-size: 0.16rem; }
+    .imag .left img {
+      width: 100%;
+      height: 100%; }
+  .imag .right {
+    height: 1.8rem;
+    float: left;
+    -webkit-flex: 1;
+    padding: 0.01rem; }
+    .imag .right .right-top {
+      height: 0.9rem;
+      padding: 0.01rem;
+      position: relative; }
+      .imag .right .right-top time {
+        position: absolute;
+        top: 0.1rem;
+        right: 0.1rem;
+        font-weight: bolder;
+        font-size: 0.16rem; }
+      .imag .right .right-top img {
+        width: 100%;
+        height: 100%; }
+    .imag .right .right-botton {
+      padding: 0.01rem;
+      height: 0.9rem;
+      position: relative; }
+      .imag .right .right-botton time {
+        position: absolute;
+        top: 0.1rem;
+        left: 0.1rem;
+        font-weight: bolder;
+        font-size: 0.16rem; }
+      .imag .right .right-botton img {
+        width: 100%;
+        height: 100%; }
+
+.nav {
+  text-align: center;
+  height: 0.34rem;
+  margin-top: 0.1rem; }
+
+.txt {
+  background: #fff;
+  height: auto; }
+  .txt li {
+    height: 0.7rem;
+    display: -webkit-flex;
+    border-bottom: 1px solid #ccc; }
+    .txt li .txt-img {
+      display: inline-block;
+      padding: 0.1rem;
+      -webkit-flex: 1; }
+      .txt li .txt-img img {
+        width: 0.58rem;
+        height: 0.58rem;
+        margin-left: 0.1rem;
+        border-radius: 100%; }
+    .txt li .txt-right {
+      -webkit-flex: 1;
+      display: inline-block;
+      height: 0.58rem; }
+      .txt li .txt-right b {
+        color: #b3b3b3;
+        line-height: 100px; }
+    .txt li .txt-con {
+      -webkit-flex: 2;
+      height: 0.58rem;
+      display: inline-block;
+      line-height: 0.2rem;
+      color: #b3b3b3; }
+      .txt li .txt-con h3 {
+        color: #333333; }
+      .txt li .txt-con b {
+        color: #fe92ac; }
+
+.footer {
+  background: deepskyblue;
+  height: 0.5rem;
+  text-align: center; }
+
+.footer-nav {
+  display: -webkit-flex; }
+  .footer-nav a {
+    -webkit-flex: 1;
+    color: #fff;
+    font-size: 0.21rem; }
+
+.footer-navs {
+  display: -webkit-flex;
+  font-size: 0.12rem; }
+  .footer-navs a {
+    -webkit-flex: 1;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

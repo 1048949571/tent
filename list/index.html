@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><span><i class="fa fa-home"></i>北京</span><h1>魅狐来了</h1><b><i class="fa fa-user-md"></i></b></header>
+<section class="content">
+
+        <div class="swiper-container flash">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/banner_1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner_2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner_5.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination" id="click"></div>
+           <!-- <div class="swiper-button-prev">
+                <i class="fa  fa-4x"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa fa-4x"></i>
+            </div>-->
+        </div>
+    <div class="navigator">
+        <dl>
+            <dt class="bg-danger">
+                <i class="fa fa-glide"></i>
+            </dt>
+            <dd>服务标准</dd>
+        </dl>
+        <dl>
+            <dt class="bg-purple">
+                <i class="fa fa-skype"></i>
+            </dt>
+            <dd>产品标准</dd>
+        </dl>
+        <dl>
+            <dt class="bg-teal">
+                <i class="fa fa-glide"></i>
+            </dt>
+            <dd>技法标准</dd>
+        </dl>
+        <dl>
+            <dt class="bg-green">
+                <i class="fa fa-cc"></i>
+            </dt>
+            <dd>选拔标准</dd>
+        </dl>
+        <dl>
+            <dt class="bg-orange">
+                <i class="fa fa-chain"></i>
+            </dt>
+            <dd>流程标准</dd>
+        </dl>
+    </div>
+    <div class="imag">
+        <div class="left">
+            <time>按摩</time>
+            <img src="img/banner_3.jpg " alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <time>美容</time>
+                <img src="img/banner_4.jpg" alt="">
+            </div>
+            <div class="right-botton">
+                <time>健身</time>
+                <img src="img/banner_8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        ——————手艺人推荐——————
+    </div>
+    <div class="txt">
+        <ul class="uls">
+           <!--<li>
+                <span class="txt-img">
+                    <img src="img/banner_9.jpg" alt="">
+                </span>
+                <span class="txt-con">
+                <h3>玛丽</h3>
+                    <p>擅长：落枕推拿、快速见效</p>
+                    <b>￥99元</b>/<time>40分钟</time>
+                </span>
+                <span class="txt-right">
+                    <b>接单量：554</b>
+                </span>
+            </li>
+            <li>
+                <span class="txt-img">
+                    <img src="img/banner_10.jpg" alt="">
+                </span>
+                <span class="txt-con">
+                <h3>小七</h3>
+                    <p>擅长：落枕推拿、快速见效</p>
+                    <b>￥59元</b>/<time>40分钟</time>
+                </span>
+                <span class="txt-right">
+                    <b>接单量：354</b>
+                </span>
+            </li>
+            <li>
+                <span class="txt-img">
+                    <img src="img/banner_3.jpg" alt="">
+                </span>
+                <span class="txt-con">
+                <h3>秋香</h3>
+                    <p>擅长：落枕推拿、快速见效</p>
+                    <b>￥159元</b>/<time>40分钟</time>
+                </span>
+                <span class="txt-right">
+                    <b>接单量：124</b>
+                </span>
+            </li>-->
+        </ul>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-nav">
+        <a href="#"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-glide"></i></a>
+        <a href="#"><i class="fa fa-qq"></i></a>
+        <a href="#"><i class="fa fa-eur"></i></a>
+    </div>
+    <div class="footer-navs">
+        <a href="#">首页</a>
+        <a href="#">订单</a>
+        <a href="#">我的</a>
+        <a href="#">更多</a>
+    </div>
+ </footer>
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script type="text/javascript">
+
+   // var myswiper = new Swiper(".swiper-content");
+    var flash = new Swiper(".flash",{
+        autoplay:2000,
+        loop:true,
+        autoplayDisableOnInteraction:false,
+        pagination:".swiper-pagination",
+        paginationClickable:true,
+       /* nextButton:".swiper-button-next",//下一页点击
+        prevButton:".swiper-button-prev",//上一页点击*/
+        effect:"fade"
+
+    });
+    /*function slideTo(index){
+        myswiper.slideTo(index);
+    }*/
+
+    $.ajax({
+        url:"data/data.json",
+        success:function(data){
+            console.log(data)
+            var str1="";
+            for(var i=0;i<data.length;i++){
+                str1+='<li><span class="txt-img"><img src="img/'+data[i].img+'"></span><span class="txt-con"><h3>'+data[i].name+'</h3><p>'+data[i].action+'</p><b>'+data[i].txt+'</b>/<time>40分钟</time></span><span class="txt-right"><b>'+data[i].shuliang+'</b></span></li>';
+            }
+            $(".uls").append(str1)
+        }
+    })
+
+</script>
+</body>
+</html>
